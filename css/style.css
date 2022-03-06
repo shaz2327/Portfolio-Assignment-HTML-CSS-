@@ -1,0 +1,268 @@
+*{
+	padding: 0;
+	margin: 0;
+	font-family: 'Josefin Sans', sans-serif;
+	box-sizing: border-box;
+}
+
+.mainnav{
+	height: 100vh;
+	width: 100%;
+	background-image: url(../assets/myimg.jpg);
+	background-size: cover;
+	background-position: left;
+}
+.grid { 
+	margin-top: 10%;
+	display: grid;
+	-ms-grid-column:repeat(auto-fill, minmax(200px, 1fr)) ;
+	grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+	grid-gap: 20px;
+	align-items: end;
+	}
+  .grid img {
+	border: 1px solid #ccc;
+	box-shadow: 2px 2px 6px 0px  rgba(0,0,0,0.3);
+	max-width: 100%;
+  }
+
+
+ .gallery h1{
+	 text-align: center;
+	 color: #ccc;
+ } 
+  
+nav{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding-top: 45px;
+	padding-left: 8%;
+	padding-right: 8%;
+}
+
+span{
+	color: #f9004d;
+}
+nav ul li{
+	list-style-type: none;
+	display: inline-block;
+	padding: 10px  25px;
+	border: 2px solid #f9004d;
+	border-radius: 30px;
+
+}
+nav ul li a{
+	color: rgb(0, 0, 0);
+	display: block;
+	text-decoration: none;
+	font-weight: bold;
+	text-transform: capitalize;
+
+	border-color: #f9004d;
+	transition-duration: 0.4s;
+}
+nav ul li a:hover{
+	color: #f9004d;
+
+}
+
+.gallerymain ul li a{
+	color: rgb(255, 255, 255);
+	display: block;
+	text-decoration: none;
+	font-weight: bold;
+	text-transform: capitalize;
+
+	border-color: #f9004d;
+	transition-duration: 0.4s;
+}
+
+.content{
+	position: absolute;
+	top: 50%;
+	left:8%;
+	transform: translateY(-50%);
+}
+h1{
+	color: rgb(0, 0, 0);
+	margin: 20px 0px 20px;
+	font-size: 75px;
+}
+h3{
+	color: rgb(0, 0, 0);
+	font-size: 25px;
+	margin-bottom: 50px;
+}
+h4{
+	color: rgba(0, 0, 0, 0.8);
+	letter-spacing: 2px;
+	font-size: 20px;
+}
+.news form{
+	width: 380px;
+	max-width: 100%;
+	position: relative;
+}
+.news form input:first-child{
+	display: inline-block;
+	width: 100%;
+	padding: 14px 130px 14px 15px;
+	border: 2px solid #f9004d;
+	outline: none;
+	border-radius: 30px;
+}
+.news form input:last-child{
+	position: absolute;
+	display: inline-block;
+	outline: none;
+	border: none;
+	padding: 10px 30px;
+	border-radius: 30px;
+	background-color:#f9004d;
+	color: white;
+
+	top: 6px;
+	right: 6px;
+}
+
+
+.gallerybg{
+	background-color: #191919;
+}
+
+
+.about{
+	width: 100%;
+	padding: 100px 0px;
+	background-color: #191919;
+}
+.about img{
+	height: auto;
+	width: 430px;
+}
+.about-text{
+	width: auto;
+
+}
+.main{
+	width: 1130px;
+	max-width: 95%;
+	margin: 0 auto;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+}
+.about-text h2{
+	color: white;
+	font-size: 75px;
+	text-transform: capitalize;
+	margin-bottom: 20px;
+}
+
+.about-text p{
+	color: #fcfc;
+	letter-spacing: 1px;
+	line-height: 28px;
+	font-size: 18px;
+	margin-bottom: 45px;
+}
+
+.education{
+	width: 100%;
+	padding: 100px 0px;
+	background-color: #191919;
+}
+
+h5{
+	color: white;
+	font-size: 23px;
+	margin-bottom: 15px;
+}
+
+.education h1{
+	color: white;
+	font-size: 75px;
+	text-transform: capitalize;
+	margin-bottom: 20px;
+	
+}
+
+.edu{
+	width: 1130px;
+	max-width: 95%;
+	margin: 0 auto;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+}
+
+table td{
+	padding:10%;
+}
+table{
+	color: #fcfc;
+	letter-spacing: 1px;
+	line-height: 28px;
+	font-size: 18px;
+	margin-bottom: 45px;
+	width: 1130px;
+	max-width: 95%;
+	margin: 0 auto;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+}
+
+.fa {
+	border-radius: 60%;
+	background-color: #007bb5;
+	color: #ccc;
+	padding: 10px;
+	font-size: 30px;
+	width: 2%;
+	text-align: center;
+	text-decoration: none;
+  }
+  
+  
+  .fa:hover {
+	opacity: 0.7;
+  }
+footer{
+	position: relative;
+	width: 100%;
+	height: 200px;
+	background: #101010;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+footer p:nth-child(1){
+	font-size: 30px;
+	color: white;
+	margin-bottom: 20px;
+	font-weight: bold;
+}
+footer p:nth-child(2){
+	color: white;
+	font-size: 17px;
+	width: 500px;
+	text-align: center;
+	line-height: 26px;
+}
+footer p:nth-child(3){
+	color: white;
+	font-size: 17px;
+	width: 500px;
+	text-align: center;
+	line-height: 26px;
+}
+
+.end{
+	position: absolute;
+	color:#f9004d;
+	bottom: 35px;
+	font-size: 14px;
+}
